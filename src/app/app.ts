@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
+import { Layout } from './core/layout/layout';
 
 @Component({
   selector: 'app-root',
-  imports: [],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  imports: [Layout],
+  template: `<app-layout></app-layout>`
 })
 export class App {}
