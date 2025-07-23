@@ -1,1 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
 @import 'tailwindcss';
+
+@theme {
+  --color-brand-light: #f7f2e9;
+  --color-brand: #edc84b;
+  --color-brand-hover: #e9bb24;
+}
+
+* {
+  font-family: 'Roboto Mono', sans-serif;
+}
+
+body {
+  @apply bg-brand-light text-zinc-900;
+}

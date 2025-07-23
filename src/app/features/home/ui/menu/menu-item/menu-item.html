@@ -1,0 +1,18 @@
+<li class="flex gap-8">
+  <img
+    class="h-30 w-30"
+    [class]="item().soldOut ? 'opacity-80 grayscale' : ''"
+    [src]="item().imageHref"
+    [alt]="item().name"
+  />
+  <div class="flex flex-col gap-1" [class.text-stone-500]="item().soldOut">
+    <h3 class="text-xl font-normal">
+      {{ item().name }}
+    </h3>
+    <p class="mb-2.5 text-sm font-light italic">
+      {{ item().ingredients }}
+    </p>
+    @let price = item().soldOut ? 'Sold out' : (item().price | currency);
+    <span [class.uppercase]="item().soldOut"> {{ price }}</span>
+  </div>
+</li>

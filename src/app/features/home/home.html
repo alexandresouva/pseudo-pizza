@@ -1,1 +1,26 @@
-<p>home works!</p>
+<h1 class="text-brand relative text-5xl font-light uppercase">
+  Pseudo Pizza Co.
+</h1>
+
+<div class="flex flex-col items-center gap-10">
+  <h2
+    class="inline-block border-y-2 border-zinc-900 py-2.5 font-sans text-2xl font-medium tracking-[3px] uppercase"
+  >
+    Our menu
+  </h2>
+
+  <p class="w-[80%] text-[15px] leading-[1.6]">
+    Authentic Italian cuisine. 6 creative dishes to choose from. All from our
+    stone oven, all organic, all delicious.
+  </p>
+
+  <app-menu [products]="(products$ | async) ?? []" />
+</div>
+
+<div class="flex flex-col items-center gap-6">
+  <p class="text-sm">
+    We're open from {{ openingHours.open }} to {{ openingHours.close }}. Come
+    visit us or order online.
+  </p>
+  <button button type="button" class="w-min">Order</button>
+</div>

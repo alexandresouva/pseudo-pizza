@@ -9,7 +9,7 @@ import { Footer } from './ui/footer/footer';
   imports: [Header, RouterOutlet, Footer],
   template: `
     <app-header />
-    <main>
+    <main class="p-8">
       <router-outlet />
     </main>
     <app-footer />
