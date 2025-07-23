@@ -51,14 +51,6 @@ export default defineConfig([
           style: 'camelCase'
         }
       ],
-      '@angular-eslint/component-selector': [
-        'error',
-        {
-          type: 'element',
-          prefix: 'app',
-          style: 'kebab-case'
-        }
-      ],
       '@typescript-eslint/explicit-function-return-type': 'error',
       '@typescript-eslint/prefer-readonly': 'error',
       '@typescript-eslint/no-inferrable-types': 'error',
